@@ -1,0 +1,121 @@
+{
+  "scope": "Compact projection of archived development receipts; no benchmark rerun for this GitHub update.",
+  "benchmark_date": "2026-09-13",
+  "audit_utc": "2026-09-16T15:41:29.547825+00:00",
+  "benchmark_version": "0.5.4.9000",
+  "measured_source_archive_sha256": "5a757e6e7a216329b8f612a25386aea0edc62be18aafde07ede7d6c7892e43f1",
+  "baseline_version": "0.5.3",
+  "baseline_source_archive_sha256": "2c8413d7cabc9200279ef05931fe6fb4603fc6d62ff2f88e8bfe7fda287da4fd",
+  "summary_rows": 98,
+  "summary_csv_sha256": "9567d5ba411933d27c45a8944f4dbb2a9a75873e82707e409830d48da6747977",
+  "source_audit_sha256": "9ff7df0b4bea0279e97179724714f9826bd8d39d7f1fad0530b937ee665fe51e",
+  "source_rows_sha256": "1a87eaca5d70e92459d273101de5c44807f2432bab4903242d4095da1bd8c707",
+  "cohorts": [
+    {
+      "planned": 1,
+      "attempted": 1,
+      "completed": 1,
+      "all_completed": true,
+      "issues": [],
+      "manifest_sha256": "42bf88dbbf0e966e0f9e21e6405b0ea76b925054639d30998e4077d796973d29",
+      "raw_sha256": "4c4bd6449578f2e44d9555c10ca5f5fffc3f2a90dc90daa583f8632205d848a7",
+      "cohort": "output_n1000000_backend_q16_v1"
+    },
+    {
+      "planned": 1,
+      "attempted": 1,
+      "completed": 1,
+      "all_completed": true,
+      "issues": [],
+      "manifest_sha256": "da1e803218c3974abbff0946289cbd9a5f0dfa0f6d0c32d814ae34c73a69bc09",
+      "raw_sha256": "f4967484ad95b0ac2190adf5c7b6cfd31f1d8084ce076b4321aa1626bb8be927",
+      "cohort": "output_n100000_p25_threads8_v1"
+    },
+    {
+      "planned": 1,
+      "attempted": 1,
+      "completed": 1,
+      "all_completed": true,
+      "issues": [],
+      "manifest_sha256": "e3b54478c14d9e5af89cbe09dd013a2035446575cc376ff1dfc6e7650428422c",
+      "raw_sha256": "a29c1854541c0871b08dee007d6ed191248f09c0604baedd81fdbbd4d289275c",
+      "cohort": "output_n100000_p25_twin40_v1"
+    },
+    {
+      "planned": 22,
+      "attempted": 22,
+      "completed": 22,
+      "all_completed": true,
+      "issues": [],
+      "manifest_sha256": "7dc76aee82358339efc43bf94d623468df95028dcf3e7ea2936f5a7dd4b7ee1d",
+      "raw_sha256": "2f67e570839805684ee350f62428b3cece0f102c55e36ca1e29f895295d01a80",
+      "cohort": "output_n10000_v1"
+    },
+    {
+      "planned": 30,
+      "attempted": 30,
+      "completed": 30,
+      "all_completed": true,
+      "issues": [],
+      "manifest_sha256": "0bfb19517c9d1aee84bda2e213d16727587e2425a024b29473c13eb9065739e4",
+      "raw_sha256": "97c2530f349a556cb09d44eaab30e3a0ff86f04d215d51195d41b3d8a9905648",
+      "cohort": "output_n2000_v1"
+    },
+    {
+      "planned": 18,
+      "attempted": 17,
+      "completed": 15,
+      "all_completed": false,
+      "issues": [],
+      "manifest_sha256": "7a2dc0f8ccc3f9f111542ef36eb68c71cc55a75e8cbfe7d21ff6eef41f586976",
+      "raw_sha256": "dbf7838673999271a4d1f3eb8eb7e34e4fe62749ef1076a23a3c311a61e84314",
+      "cohort": "output_n50000_new_v1"
+    },
+    {
+      "planned": 2,
+      "attempted": 2,
+      "completed": 2,
+      "all_completed": true,
+      "issues": [],
+      "manifest_sha256": "fb0217f23f32375b4632a99565000e08c1551bdeef3996363dcd9fb5c80d5b85",
+      "raw_sha256": "14953aeb89aa278655d6ff78eb5fe9f470854ac2ae76ece5280474e9e8b0b45d",
+      "cohort": "output_n50000_p25_threads8_v1"
+    },
+    {
+      "planned": 2,
+      "attempted": 2,
+      "completed": 2,
+      "all_completed": true,
+      "issues": [],
+      "manifest_sha256": "a87267da167d18ba2c096e2c5d713287f9c794ec0a8f9faf8eb9dbc0983c99cd",
+      "raw_sha256": "d8e6f4f18d8dfe393cbea13e1c5b6493a1c193d3306bbef7aaa46f2289e77b84",
+      "cohort": "output_n50000_p25_twin20_v1"
+    },
+    {
+      "planned": 11,
+      "attempted": 11,
+      "completed": 0,
+      "all_completed": false,
+      "issues": [],
+      "manifest_sha256": "d8674447edafd4a310af5fc467067b298b0f8a3079f29af87d55af660bea326f",
+      "raw_sha256": "8b9a91850bf70be9822eeb473dfcbd4432143c5de4a5c1b94ae11ca8fa12a52b",
+      "cohort": "output_smoke_n100_v1"
+    },
+    {
+      "planned": 11,
+      "attempted": 11,
+      "completed": 11,
+      "all_completed": true,
+      "issues": [],
+      "manifest_sha256": "9d7049c0618506e4f66c58a7b5247868c97d8e11f2c5f8728c97d43554bfcfa1",
+      "raw_sha256": "d444ba1bc18fb53e43d4e13ca13994b83184df7deb1a3a94e9c0d48ea5487c09",
+      "cohort": "output_smoke_n100_v2"
+    }
+  ],
+  "limits": [
+    "Full raw outputs, source archives and installed benchmark libraries are not bundled.",
+    "The measured development build and the current source share a development version label; the measured archive hash identifies the measurements.",
+    "query_count is a generic initialized field; the one-million-row backend check actually evaluated neighbor_queries=16.",
+    "No 300000-row receipt or full one-million-row screening/PME result is included."
+  ]
+}

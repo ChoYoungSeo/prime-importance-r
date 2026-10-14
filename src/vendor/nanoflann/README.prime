@@ -1,0 +1,8 @@
+nanoflann v1.9.0, BSD 2-Clause (see COPYING and header).
+Source: https://github.com/jlblancoc/nanoflann/tree/v1.9.0
+Header URL: https://raw.githubusercontent.com/jlblancoc/nanoflann/v1.9.0/include/nanoflann.hpp
+Header SHA256: e91b910b6fcdeaefb0253d50438c519de675980cbf3374397da730dfc23bbfe7
+Unmodified upstream header. PRIME uses a bounded heap ResultSet and maps
+Euclidean neighbor_eps to squared-L2 tolerance eps*(2+eps).
+The complete header notice is also installed from inst/LICENSES/nanoflann.txt
+so binary package distributions retain the BSD copyright and license terms.

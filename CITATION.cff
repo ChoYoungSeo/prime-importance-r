@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "Please cite the accompanying manuscript when using this software."
+title: "PRIME: A New Measure for Variable Importance"
+type: software
+authors:
+  - family-names: Cho
+    given-names: Youngseo
+  - family-names: Joseph
+    given-names: V. Roshan
+version: 0.5.5
+license: MIT
+repository-code: "https://github.com/ChoYoungSeo/prime-importance-r"
+preferred-citation:
+  type: article
+  title: "Measuring Variable Importance Using Proportional Inclusive Marginal Effects"
+  authors:
+    - family-names: Cho
+      given-names: Youngseo
+    - family-names: Joseph
+      given-names: V. Roshan
+  year: 2026
+  journal: arXiv
+  doi: "10.48550/arXiv.2610.17053"
+  url: "https://arxiv.org/abs/2610.17053"

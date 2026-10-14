@@ -1,0 +1,10 @@
+bibentry(
+  bibtype = "Misc",
+  title = "Measuring Variable Importance Using Proportional Inclusive Marginal Effects",
+  author = c(person("Youngseo", "Cho"),
+             person(c("V.", "Roshan"), "Joseph")),
+  year = "2026",
+  doi = "10.48550/arXiv.2610.17053",
+  url = "https://arxiv.org/abs/2610.17053",
+  note = "arXiv:2610.17053"
+)

@@ -1,0 +1,13 @@
+/library/
+/build/
+/baseline_source/
+/previous_project_library/
+/candidate_workspace/
+/output*/
+*.log
+*.rds
+__pycache__/
+*.pyc
+/snapshots/
+/activation.json
+/edge_validation/interrupt_result.json

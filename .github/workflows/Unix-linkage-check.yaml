@@ -1,0 +1,67 @@
+name: Unix LAPACK linkage
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'src/**'
+      - 'DESCRIPTION'
+      - '.github/workflows/Unix-linkage-check.yaml'
+
+permissions:
+  contents: read
+
+jobs:
+  clang:
+    name: Linux Clang (R ${{ matrix.r }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        r: [devel, release]
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+      - uses: r-lib/actions/setup-r@v2
+        with:
+          r-version: ${{ matrix.r }}
+          use-public-rspm: true
+      - uses: r-lib/actions/setup-r-dependencies@v2
+        with:
+          needs: check
+      - name: Configure Clang and inspect numerical library configuration
+        shell: bash
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y clang gfortran liblapack-dev libblas-dev
+          clang++ --version
+          R CMD config LAPACK_LIBS
+          R CMD config BLAS_LIBS
+          R CMD config FLIBS
+          test -f src/Makevars
+          cat src/Makevars
+          compiler_vars="$RUNNER_TEMP/prime-clang-Makevars"
+          cat > "$compiler_vars" <<'MAKEVARS'
+          CC=clang
+          CXX=clang++
+          CXX11=clang++
+          CXX14=clang++
+          CXX17=clang++
+          CXX20=clang++
+          CXX23=clang++
+          MAKEVARS
+          printf 'R_MAKEVARS_USER=%s\n' "$compiler_vars" >> "$GITHUB_ENV"
+      - name: Check source installation, package loading and tests
+        uses: r-lib/actions/check-r-package@v2
+        env:
+          NOT_CRAN: 'false'
+          _R_CHECK_CRAN_INCOMING_: 'true'
+          _R_CHECK_CRAN_INCOMING_REMOTE_: 'true'
+          _R_CHECK_FORCE_SUGGESTS_: 'true'
+        with:
+          args: 'c("--as-cran", "--run-donttest", "--no-manual")'
+          build_args: 'character()'
+          error-on: '"warning"'
+          upload-results: 'true'
+          artifact-name: unix-linkage-${{ matrix.r }}

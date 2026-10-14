@@ -1,0 +1,13 @@
+.DS_Store
+.RData
+.Rhistory
+.Rproj.user/
+*.Rcheck/
+*.tar.gz
+src/*.o
+src/*.so
+src/*.dll
+__pycache__/
+*.pyc
+library/
+tmp/

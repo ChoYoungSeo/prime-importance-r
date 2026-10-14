@@ -1,0 +1,27 @@
+# No pkgdown site has been deployed for this local review candidate.
+
+template:
+  bootstrap: 5
+  bootswatch: flatly
+
+home:
+  title: "PRIME: A New Measure for Variable Importance"
+  description: >
+    Response-relevant screening and proportional global importance for noisy,
+    dependent input-response data.
+
+navbar:
+  structure:
+    left: [reference]
+    right: [search, github]
+  components:
+    github:
+      icon: fa-github
+      aria-label: GitHub
+      href: https://github.com/ChoYoungSeo/prime-importance-r
+
+reference:
+  - title: Complete workflow
+    contents:
+      - prime
+      - prime_screen

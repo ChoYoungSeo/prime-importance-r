@@ -1,0 +1,12 @@
+^\.github$
+^docs$
+^Makefile$
+^README\.md$
+^CITATION\.cff$
+^_pkgdown\.yml$
+^LICENSE\.md$
+^cran-comments\.md$
+^CRAN-SUBMISSION$
+^library$
+^tmp$
+^benchmarks$

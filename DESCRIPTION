@@ -1,0 +1,29 @@
+Package: prime
+Type: Package
+Title: Proportional Inclusive Marginal Effects
+Version: 0.5.5
+Authors@R: c(
+    person("Youngseo", "Cho", role = c("aut", "cre", "cph"),
+           email = "josun@gatech.edu"),
+    person("V. Roshan", "Joseph", role = c("aut", "cph"))
+  )
+Description: Implements a model-free variable importance measure based on
+    proportional marginal effects estimated from noisy input-output data.
+    See Cho and Joseph (2026) <doi:10.48550/arXiv.2610.17053> for details.
+License: MIT + file LICENSE
+Encoding: UTF-8
+URL: https://github.com/ChoYoungSeo/prime-importance-r
+BugReports: https://github.com/ChoYoungSeo/prime-importance-r/issues
+Depends: R (>= 4.2.0)
+Imports:
+    FNN,
+    MASS,
+    parallel,
+    Rcpp
+LinkingTo:
+    Rcpp,
+    RcppArmadillo
+Suggests:
+    testthat (>= 3.0.0),
+    twinning
+Config/testthat/edition: 3
