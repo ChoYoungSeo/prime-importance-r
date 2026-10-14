@@ -29,6 +29,7 @@ jobs:
           use-public-rspm: true
       - uses: r-lib/actions/setup-r-dependencies@v2
         with:
+          extra-packages: any::rcmdcheck
           needs: check
       - name: Configure Clang and inspect numerical library configuration
         shell: bash
